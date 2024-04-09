@@ -1,0 +1,113 @@
+// app global css in SCSS form
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Pretendard;
+  src: url(./fonts/Pretendard-Bold.otf);
+}
+
+.text-menu-bold {
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.text-menu {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+// declare a class which applies it
+body {
+  font-family: Poppins;
+}
+
+.text-color-1 {
+  color: #343741;
+}
+
+.text-color-4 {
+  color: #344054;
+}
+
+.text-color-f {
+  color: #5e626f;
+}
+
+.text-color-2f {
+  color: #24252f;
+}
+
+.text-color-ff {
+  color: #4a77ff;
+}
+
+.text-color-8 {
+  color: #40e2e8;
+}
+
+footer {
+  background-color: #fbfbfb;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
